@@ -1,13 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## makeCacheMatrix creates a copy of a matrix x that can have its inverse easily found using the solve function
+##cacheSolve computes the inverse of the matrix.  
 
 makeCacheMatrix <- function(x = matrix()) {
         m<-NULL
         setM<-function(y){
-        x<<-y
-        m<<-NULL
+                x<<-y
+                m<<-NULL
         }
         get<-function()x
         setinverse<-function(solve) m<<-solve
